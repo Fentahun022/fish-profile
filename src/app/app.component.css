@@ -1,0 +1,36 @@
+.app-layout {
+  height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+}
+
+.header-trigger {
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.inner-content {
+  padding: 24px;
+}
+
+.app-menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.logo-container {
+  margin-right: 16px;
+  width: 100px; /* Adjust the container width to match the desired size */
+  height: 100px; /* Adjust the container height to match the desired size */
+  border-radius: 50%; /* Set the border-radius to 50% to create a circle */
+  overflow: hidden; /* Hide any content that exceeds the circle shape */
+}
+
+.logo-container img {
+  width: 100%; /* Set the image width to fill the container */
+  height: 100%; /* Set the image height to fill the container */
+  object-fit: cover; /* Maintain the aspect ratio and cover the container */
+}

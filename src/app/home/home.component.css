@@ -1,0 +1,54 @@
+.home-container {
+    position: relative;
+    height: 60vh; /* Set the initial height as needed */
+    overflow: hidden;
+  }
+  
+  .overlay-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .overlay-text {
+    font-size: 36px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide the overflowed text */
+    border-right: 1px solid white; /* Create a typing cursor */
+    animation: typing 10s steps(16) infinite; /* Adjust the duration and steps as needed */
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0; /* Start with no text */
+    }
+    100% {
+      width: 100%; /* Fully reveal the text */
+    }
+  }
+  
+  .background-image {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    transition: height 0.5s ease; /* Add a smooth transition effect for the image height */
+  }
+  
+  /* Media query for responsiveness and scrolling */
+  @media screen and (min-width: 768px) {
+    .home-container {
+      height: 100vh; /* Set the height to full viewport height on larger screens */
+    }
+  }
+  
