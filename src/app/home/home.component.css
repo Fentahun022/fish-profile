@@ -44,6 +44,13 @@
     z-index: 0;
     transition: height 0.5s ease; /* Add a smooth transition effect for the image height */
   }
+ .conntent {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
+  }
   
   /* Media query for responsiveness and scrolling */
   @media screen and (min-width: 768px) {
